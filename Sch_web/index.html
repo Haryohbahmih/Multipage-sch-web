@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <i><link rel="stylesheet" href="index.css"></i>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    <title>RaveTechh</title>
+    
+</head>
+<body>
+    <!-- Navigation  -->
+    <nav>
+        <h2>RT</h2>
+        <div class="navigation">
+            <ul>
+                <i   id="menu-close" class="fa-solid fa-xmark"></i>
+                <li> <a  class="active" href="#" >Home</a></li>
+                <li> <a href="about.html" >About</a></li>
+                <li> <a href="course.html" >Courses</a></li>
+                <li> <a href="contact.html" >Contact</a></li>
+                <button class="btnLogin-popup" >Login</button>
+            </ul>
+            <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="wrapper">
+            <span class="icon-close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="logreg-box">
+                <!-- login form -->
+                <div class="form-box login">
+                    <div class="logreg-title">
+                        <h2>Login</h2>
+                        <p>Please login to use the platform</p>
+                    </div>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label> <input type="checkbox"> Remember me</label>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+
+                        <div class="logreg-link">
+                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+                <!-- register form -->
+                <div class="form-box register">
+                    <div class="logreg-title">
+                        <h2>Registration</h2>
+                        <p>Please provide the following to verify your identity</p>
+                    </div>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-user'></i></span>
+                            <input type="text" required>
+                            <label>Full Name</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label> <input type="checkbox">I agree to the terms & conditions</label>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+
+                        <div class="logreg-link">
+                            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="media-options">
+                <a href="#">
+                    <i class='bx bxl-google-plus'></i>
+                    <span>Login with Google</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home -->
+
+    <section id="home" >
+        <h2>Enhance Your Future With RaveTech</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo sed saepe cumque nisi est delectus nemo vitae architecto error dicta.</p>
+        <div class="btn">
+            <a class="blue" href="#">Learn More</a>
+            <a class="coral" href="#">Visit Courses</a>
+        </div>
+    </section>
+
+    <!--Why Choose Us -->
+    <section id="choose" >
+        <h1>Why Choose Us</h1>
+        <div class="choose-details">
+            <div class="choose-pix">
+                <img src="images/conduciveenvirons.jpg" alt="">
+            </div>
+            <div class="choose-text">
+                <p>We teach hard concepts in ways that can be easily understood. Our classes are very interactive and problem-solving driven.
+                    <br><br>
+                    We thoroughly prepare our students, not just for a job but a fulfilling career in software engineering.
+                    <br><br>
+                    Our approach is simple, yet gives you the oppourtunity to master software engineering in the least amount of time.
+                    <br><br>
+                    Our commitment to exceptional customer service is unwavering. From project initiation to post-implementation support, our dedicated support team is always available to address your concerns and ensure a smooth experience.
+                </p>
+            </div>
+        </div>
+    </section>
+  
+
+    <!-- Courses -->
+    <section id="course" >
+        <h1>Our Popular Courses</h1>
+        <p>Discover the Best Courses for Your Learning Journey!</p>
+
+        <div class="course-box">
+
+            <div onclick="window.location.href='course-inner.html';"   class="courses">
+                <img src="images/java.jpg" alt="">
+                <div class="details">
+                    <span>Updates 21/8/22</span>
+                    <h6>JavaScript Beginners Courses</h6>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(269)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $49.99
+                </div>
+            </div>
+            <div  onclick="window.location.href='course-inner2.html';"  class="courses">
+                <img src="images/frontendwebdev.jpg" alt="">
+                <div class="details">
+                    <span>Updates 21/8/22</span>
+                    <h6>Frontend Web Development</h6>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(289)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $50.00
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/UIUX-.jpg" alt="">
+                <div class="details">
+                    <span>Updates 21/8/22</span>
+                    <h6>UI/UX Design Beginners Course</h6>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(289)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $45.99
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/fullstackweb.jpg" alt="">
+                <div class="details">
+                    <span>Updates 21/8/22</span>
+                    <h6>FullStack web Dev Courses</h6>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(279)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $69.99
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/codde.jpg" alt="">
+                <div class="details">
+                    <span>Updates 21/8/22</span>
+                    <h6>Web Development Crash Course</h6>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(289)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $59.99
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/appdev.jpg" alt="">
+                <div class="details">
+                    <span>Updates 21/8/22</span>
+                    <h6>App Development Courses</h6>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(289)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $89.99
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="registration" >
+        <div class="reminder">
+            <p>Get 100 Online Courses For Free</p>
+            <h1>Register To Get It</h1>
+            <div class="time">
+                <div class="date">
+                    18 <br> Days
+                </div>
+                <div class="date">
+                    23 <br> Hours
+                </div>
+                <div class="date">
+                    06 <br> Mins
+                </div>
+                <div class="date">
+                    58 <br> Secs
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <h3>Create Free Account NOW!</h3>
+            <input type="text" placeholder="Name"> 
+            <input type="text" placeholder="Email Address"> 
+            <input type="number" placeholder="Phone Number"> 
+            <div class="btn">
+                <a class="coral" href="#">Visit Courses</a>
+            </div>
+        </div>
+    </section>
+
+      <!-- Features  -->
+      <section id="features" >
+        <h1>Awesome Features</h1>
+        <p>We presents to you our amazing features!</p>
+
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Scholarship Facility</h3>
+                <p>One make creepeth, amn boaring chdbdjn gcsbzjnchsj vbsgh foodbys hover.</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-certificate"></i>
+                <h3>Online Courses</h3>
+                <p>One make creepeth, amn boaring chdbdjn gcsbzjnchsj vbsgh foodbys hover.</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-award"></i>
+                <h3>Global Certification</h3>
+                <p>One make creepeth, amn boaring chdbdjn gcsbzjnchsj vbsgh foodbys hover.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer >
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. We only send promo offers,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email address">
+                <a href="#" class="coral">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2022 All rights Reserved</p>
+            <div class="pro-links">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

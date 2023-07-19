@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <i>
+        <link rel="stylesheet" href="index.css">
+    </i>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <title>RaveTech</title>
+</head>
+
+<body>
+    <!-- Navigation  -->
+    <nav>
+        <h2>RT</h2>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a class="active" href="course.html">Courses</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <button class="btnLogin-popup" >Login</button>
+            </ul>
+            <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="wrapper">
+            <span class="icon-close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="logreg-box">
+                <!-- login form -->
+                <div class="form-box login">
+                    <div class="logreg-title">
+                        <h2>Login</h2>
+                        <p>Please login to use the platform</p>
+                    </div>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label> <input type="checkbox"> Remember me</label>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+
+                        <div class="logreg-link">
+                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+                <!-- register form -->
+                <div class="form-box register">
+                    <div class="logreg-title">
+                        <h2>Registration</h2>
+                        <p>Please provide the following to verify your identity</p>
+                    </div>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-user'></i></span>
+                            <input type="text" required>
+                            <label>Full Name</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label> <input type="checkbox">I agree to the terms & conditions</label>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+
+                        <div class="logreg-link">
+                            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="media-options">
+                <a href="#">
+                    <i class='bx bxl-google-plus'></i>
+                    <span>Login with Google</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Home -->
+
+    <section id="about-home">
+        <div class="video-container">
+            <video autoplay loop muted>
+              <source src="video/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="content">
+            <h2>Enroll in Our Popular Courses</h2>
+          </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="course-inner">
+        <div class="overview">
+            <img class="course-img" src="images/java.jpg"  alt="">
+            <div class="course-head">
+                <div class="c-name">
+                    <h2>JavaScript Beginner Course</h2>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Modern JavaScript from the beginning - all the way up to JS expert level! THE must-have
+                        JavaScript resource in 2021</p>
+                </div>
+                <span>$49.99</span>
+            </div>
+            <h3>Instructor</h3>
+            <div class="tutor">
+                <img src="images/lapp.jpg" alt="">
+                <div class="tutor-det">
+                    <h5>Wyne Josh</h5>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+            <hr>
+            <h3>Course Overview</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, architecto. Lorem, ipsum dolor sit
+                amet consectetur adipisicing elit. Illum labore quasi animi debitis harum a quidem dolorem velit
+                voluptas tenetur?
+                <br><br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo nemo consectetur maiores esse magni
+                itaque necessitatibus quis, quasi, atque, hic nihil vero. Ipsam veritatis maiores dicta? Sequi totam
+                libero nobis!
+                <br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quo corporis repudiandae fugiat nobis
+                provident aperiam quam possimus illum, harum impedit temporibus, modi cumque! Voluptas debitis in ipsam
+                ab iste eius, rem laudantium ut odit consectetur quos nam nulla! Pariatur!
+            </p>
+            <hr>
+            <h3>What you'll learn</h3>
+            <div class="learn">
+                <p><i class="fa-solid fa-circle-check"></i>JavaScript from scratch - beginner to advanced.</p>
+                <p><i class="fa-solid fa-circle-check"></i>The basics of JavaScript syntax, variables, data types, and operators.</p>
+                <p><i class="fa-solid fa-circle-check"></i>How to work with arrays, objects, and functions in JavaScript.</p>
+                <p><i class="fa-solid fa-circle-check"></i>Event handling and adding interactivity to web pages.</p>
+                <p><i class="fa-solid fa-circle-check"></i>Asynchronous JavaScript and working with promises.</p>
+                <p><i class="fa-solid fa-circle-check"></i>Error handling and debugging techniques in JavaScript.</p>
+            </div>
+        </div>
+        <div class="enroll">
+            <h3>This course includes:</h3>
+            <p><i class="fa-solid fa-circle-check"></i>52 hours video</p>
+            <p><i class="fa-solid fa-circle-check"></i>75 articles</p>
+            <p><i class="fa-solid fa-circle-check"></i>Downloadable resources</p>
+            <p><i class="fa-solid fa-circle-check"></i>Full lifetime access</p>
+            <p><i class="fa-solid fa-circle-check"></i>Assignment</p>
+            <p><i class="fa-solid fa-circle-check"></i>Certificate of completion</p>
+            <div class="enroll-btn">
+                <a href="#" class="blue">Enroll Course</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. We only send promo offers,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email address">
+                <a href="#" class="coral">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2022 All rights Reserved</p>
+            <div class="pro-links">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

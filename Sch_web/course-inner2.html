@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <i>
+        <link rel="stylesheet" href="index.css">
+    </i>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <title>RaveTech</title>
+</head>
+
+<body>
+    <!-- Navigation  -->
+    <nav>
+        <h2>RT</h2>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a class="active" href="course.html">Courses</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <button class="btnLogin-popup" >Login</button>
+            </ul>
+            <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="wrapper">
+            <span class="icon-close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="logreg-box">
+                <!-- login form -->
+                <div class="form-box login">
+                    <div class="logreg-title">
+                        <h2>Login</h2>
+                        <p>Please login to use the platform</p>
+                    </div>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label> <input type="checkbox"> Remember me</label>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+
+                        <div class="logreg-link">
+                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+                <!-- register form -->
+                <div class="form-box register">
+                    <div class="logreg-title">
+                        <h2>Registration</h2>
+                        <p>Please provide the following to verify your identity</p>
+                    </div>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-user'></i></span>
+                            <input type="text" required>
+                            <label>Full Name</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label> <input type="checkbox">I agree to the terms & conditions</label>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+
+                        <div class="logreg-link">
+                            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="media-options">
+                <a href="#">
+                    <i class='bx bxl-google-plus'></i>
+                    <span>Login with Google</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Home -->
+
+    <section id="about-home">
+        <div class="video-container">
+            <video autoplay loop muted>
+              <source src="video/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="content">
+            <h2>Enroll in Our Popular Courses</h2>
+          </div>
+
+    </section>
+
+    <!-- Courses -->
+    <section id="course-inner">
+        <div class="overview">
+            <img class="course-img" src="images/frontendwebdev.jpg" alt="">
+            <div class="course-head">
+                <div class="c-name">
+                    <h2>Frontend Web Development</h2>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Become a Frontend Web Development Expert:
+                        Are you ready to take your frontend web development skills to the next level? </p>
+                </div>
+                <span> $50.00</span>
+            </div>
+            <h3>Instructor</h3>
+            <div class="tutor">
+                <img src="images/lapp.jpg" alt="">
+                <div class="tutor-det">
+                    <h5>Wyne Josh</h5>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+            <hr>
+            <h3>Course Overview</h3>
+            <p>In this course, we cover everything you need to know about modern frontend web development, ensuring you stay ahead of the curve. From HTML and CSS fundamentals to advanced JavaScript concepts, we guide you through each step of your learning journey. Gain a solid understanding of the latest web technologies, responsive design principles, and best practices.
+                <br><br>
+                With our course, you'll learn how to build stunning and user-friendly websites using the latest frontend technologies. Dive into essential topics like HTML5 semantics, CSS3 styling, responsive layouts, and more. Create visually appealing and seamless web experiences that engage your users and leave a lasting impression.
+                <br><br>
+                Put your skills into practice by working on real-world projects throughout the course. Our hands-on approach ensures that you gain practical experience and develop a portfolio that showcases your abilities. From building interactive web applications to crafting intuitive user interfaces, you'll be well-prepared for the demands of real-world frontend development.
+            </p>
+            <hr>
+            <h3>What you'll learn</h3>
+            <div class="learn">
+                <p><i class="fa-solid fa-circle-check"></i>HTML5 and CSS3 fundamentals for structuring and styling web pages</p>
+                <p><i class="fa-solid fa-circle-check"></i>Responsive web design techniques to ensure your websites look great on different devices</p>
+                <p><i class="fa-solid fa-circle-check"></i>JavaScript basics for adding interactivity and dynamic functionality to your web pages</p>
+                <p><i class="fa-solid fa-circle-check"></i>DOM manipulation to interact with and manipulate the elements on a web page</p>
+                <p><i class="fa-solid fa-circle-check"></i>Introduction to popular frontend frameworks like React, Vue.js, or Angular</p>
+                <p><i class="fa-solid fa-circle-check"></i>Working with APIs to retrieve and display data from external sources</p>
+            </div>
+        </div>
+        <div class="enroll">
+            <h3>This course includes:</h3>
+            <p><i class="fa-solid fa-circle-check"></i>52 hours video</p>
+            <p><i class="fa-solid fa-circle-check"></i>75 articles</p>
+            <p><i class="fa-solid fa-circle-check"></i>Downloadable resources</p>
+            <p><i class="fa-solid fa-circle-check"></i>Full lifetime access</p>
+            <p><i class="fa-solid fa-circle-check"></i>Assignment</p>
+            <p><i class="fa-solid fa-circle-check"></i>Certificate of completion</p>
+            <div class="enroll-btn">
+                <a href="#" class="blue">Enroll Course</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. We only send promo offers,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email address">
+                <a href="#" class="coral">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2022 All rights Reserved</p>
+            <div class="pro-links">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
